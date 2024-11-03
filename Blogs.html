@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespren Johny's</title>
+    <link rel="stylesheet" href="Heropage.css">
+    <link rel="icon" type="image/jpg" href="homepage_img/grapicon.jpg">
+</head>
+<body>
+    <!-- header -->
+    <header class="MainHeader">
+        <div class="logo">
+            <img src="homepage_img/Logo-removebg-preview.png" alt="Logo">
+        </div>   
+        <nav>
+            <ul class="menu-items">
+                <div>
+                    <li><a href="#" id="log-in">Login</a></li>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <div class="account-icon">
+                    <img src="homepage_img/iconamoon_profile-fill.png" alt="Profile Icon">
+                </div>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!--  The content of the page  -->
+    <main class="content">
+
+        <div class="box">
+            <div class="middlebox">
+                <h1>This is a Blog page</h1>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="homepage_img/footer-logo.png" alt="Footer Logo">
+        </div>
+        <div class="descriptions-and-icons">
+            <div class="description">
+                <p>
+                    Follow us on our social media platforms for the <br> latest updates, delicious recipes, and foodie news!
+                </p>
+            </div>
+            <div class="icons">
+                <img src="homepage_img/fb.png" alt="Facebook Icon">
+                <img src="homepage_img/mesenger.png" alt="Messenger Icon">
+                <img src="homepage_img/insta.png" alt="Instagram Icon">
+            </div>
+        </div>
+        <div class="other-info">
+            <div class="des" id="destination">
+                <img src="homepage_img/location.png" alt="Location Icon">
+                <p>
+                    Lucena, Philippines, 4301 <br>
+                    Address
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/cpnum.png" alt="Phone Icon">
+                <p>
+                    0915 683 5232 <br>
+                    Mobile
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/email.png" alt="Email Icon">
+                <p>
+                    marquezannaguia@yahoo.com <br>
+                    Email
+                </p>
+            </div>
+        </div>          
+    </footer>
+<script>
+    document.getElementById("destination").addEventListener("click", ()=> {
+        window.location.href="https://www.google.com/maps/search/dll/@13.9471763,121.5890127,20z?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const menuItems = document.querySelector(".menu-items");
+
+        hamburgerMenu.addEventListener("click", () => {
+            menuItems.classList.toggle("show");
+            console.log("kill me")
+        });
+    });
+</script>
+
+</body>
+</html>
