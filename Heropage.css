@@ -1043,8 +1043,7 @@ footer > .other-info > .des > p {
 
 @media (max-width: 476px) {
     .body {
-        max-width: none;
-        width: 100%;
+        max-width: 320;
     }
 
     .MainHeader {
@@ -1156,10 +1155,13 @@ footer > .other-info > .des > p {
     }
 
     .contact-us-label > img {
-        height: 25vh;
+        height: 20vh;
         width: auto;
     }
 
+    #box-form {
+        padding: 10px;
+    }
     
     #box-form > Form {
         padding: 0px;
@@ -1177,7 +1179,7 @@ footer > .other-info > .des > p {
     
     #box-form > Form label {
         font-size: 10px;
-        margin: 0px 0px  8px;
+        margin: 0px 0px  2px;
     }
     
     .input-box {
@@ -1225,6 +1227,138 @@ footer > .other-info > .des > p {
         }
     }
 
+}
 
 
+@media (max-width: 320) {
+    .body {
+        max-width: none;
+        width: 100%;
+    }
+
+    .first-sp {
+        padding-left: 2rem;
+        & h1 {
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        & h5 {
+            font-size: 8px;
+            padding-bottom: 8px;
+        }
+        & #readmore-sp {
+            padding: 2px;
+            font-size: 8px;
+        }
+        & #readmore-sp:hover {
+            background-color: white;    
+        }
+    }
+
+    .second-sp > img {
+        height: 40vh;
+        width: auto;
+    }
+
+    .first-fp > img {
+        margin: 5px;
+        height: 30vh;
+        width: auto;
+    }
+     
+    .second-fp {
+        flex-direction: column;
+        padding: 10px;
+        & h1 {
+            padding: 2rem 0 1rem 0;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        & h5 {
+            padding: 0 0 8px 0;
+            font-size: 10px;
+        }
+        & button {
+            border: black solid;
+            background-color: transparent;
+            padding: 2px 5px 2px 5px;
+            & a {
+                font-size: 10px;
+            }
+        }
+        & img {
+
+            height: 5vh;
+            width: auto;
+        }
+    }
+    /* this is our products */
+
+    .first-tp {
+        padding-left: 0px;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .second-tp  > img{
+        height: 20vh;
+        width: auto;
+    }
+
+    #seemore-tp > button {
+        padding: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 15rem;
+        font-size: 12px;
+    }
+
+    .contact-us-label {
+        margin: 10px;
+    }
+
+    .contact-us-label > img {
+        height: 20vh;
+        width: auto;
+    }
+
+    #box-form {
+        padding: 10px;
+    }
+    
+    #box-form > Form {
+        padding: 0px;
+        margin: 0px;
+    
+    }
+
+    #box-form h1 {
+        font-size: 15px;
+    }
+    
+    #box-form > Form > .baseline {
+        margin: 5px 0;
+    }
+    
+    #box-form > Form label {
+        font-size: 10px;
+        margin: 0px 0px  2px;
+    }
+    
+    .input-box {
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 10px;
+        width: 150px;
+        resize: none;
+    }
+    
+    #box-form > Form button {
+        padding: 2px 30px 2px 30px;
+        color: white;
+        background-color: #FCE078;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
 }
