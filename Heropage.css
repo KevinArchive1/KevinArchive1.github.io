@@ -115,6 +115,264 @@ nav ul li a:hover {
 }
 
 
+#first-page > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#second-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(homepage_img/second-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.first-sp {
+    padding-left: 5rem;
+    & h1 {
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+    & h5 {
+        font-size: 20px;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+    & #readmore-sp {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: transparent;
+        transition: 1.0s;
+        transition-delay: 0.1s;
+    }
+    & #readmore-sp:hover {
+        background-color: white;    
+    }
+}
+
+.second-sp > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: auto;
+}
+
+#third-page {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.first-tp {
+    padding-left: 20px;
+    font-size: 60px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.second-tp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+        height: 60vh;
+        width: 100%;
+    }
+}
+
+#seemore-tp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & button {
+        padding: 5px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 20rem;
+        font-size: 20px;
+        background-color: #D70000;
+        border: none;
+        transition: 1s;
+        transition-delay: 0.1s;
+    }
+    & button:hover {
+        background-color: white;
+        border: 2px black solid;
+    }
+    & a {
+        color: white;
+        transition: 1s;
+        transition-delay: 0.1s; 
+    }
+    & a:hover {
+        color: black;
+
+    }   
+}
+
+#forth-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url(homepage_img/second-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.first-fp {
+    display: flex;
+    & img {
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        height: 80vh;
+        width: auto;
+    }
+}
+
+
+.second-fp {
+    flex-direction: column;
+    padding: 20px;
+    & h1 {
+        padding: 2rem 0 1rem 0;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    & h5 {
+        padding: 0 0 1rem 0;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: justify;
+    }
+    & button {
+        border: black solid;
+        background-color: transparent;
+        padding: 5px 10px 5px 10px;
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+    }
+    & #arrows {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    & img {
+        justify-content: end;
+        align-items: end;
+        height: 10vh;
+        width: auto;
+    }
+}
+
+#fifth-page {
+    display: flex;
+    background-image: url(homepage_img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-us-label {
+    text-align: center; 
+    margin: 20px; 
+
+}
+
+.contact-us-label > img {
+    height: 70vh;
+    width: auto;
+    color: #333; /* Example style */
+}
+
+.content-us-form  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 2px black solid;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#box-form > Form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#box-form > Form > .baseline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+#box-form > Form label {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0px  10px;
+}
+
+.input-box {
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    width: 500px;
+    resize: none;
+}
+
+#box-form > Form button {
+    padding: 5px 60px 5px 60px;
+    color: white;
+    background-color: #FCE078;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+
+#box-form > Form button:hover {
+    border: 2px black solid;
+    background-color: white;
+    color: black;
+}
 /* Footer */
 
 footer {
@@ -196,6 +454,7 @@ footer > .other-info > .des > p {
         font-size: 22px; 
     }
 
+    /* the content */
     .content {
         padding-top: 110px; 
     }
@@ -204,7 +463,115 @@ footer > .other-info > .des > p {
         display: flex;
         width: 100%;
     }
+
+    .first-sp {
+        & h1 {
+            font-size: 50px;
+        }
+        & h5 {
+            font-size: 15px;
+        }
+        & #readmore-sp {
+            padding: 6px;
+            font-size: 15px;
+        }
+        & #readmore-sp:hover {
+            background-color: white;    
+        }
+    }
+
+    .second-sp > img {
+        height: 80vh;
+        width: auto;
+    }
+
+    .first-tp {
+        padding-left: 20px;
+        font-size: 50px;
+        padding-bottom: 15px;
+        font-weight: 700;
+    }
     
+    .second-tp  > img{
+        height: 50vh;
+        width: auto;
+    }
+
+    .first-fp > img {
+        height: 60vh;
+        width: auto;
+    }
+     
+    .second-fp {
+        flex-direction: column;
+        padding: 18px;
+        & h1 {
+            padding: 3rem 0 1rem 0;
+            font-weight: 700;
+            font-size: 50px;
+        }
+        & h5 {
+            padding: 0 0 1rem 0;
+            font-weight: 700;
+            font-size: 15px;
+        }
+        & button {
+            border: black solid;
+            background-color: transparent;
+            padding: 5px 10px 5px 10px;
+            & a {
+                font-size: 15px;
+            }
+        }
+        & img {
+            height: 10vh;
+            width: auto;
+        }
+    }
+
+    .contact-us-label > img {
+        height: 60vh;
+        width: auto;
+    }
+
+    
+    #box-form > Form {
+        padding: 20px;
+        margin: 10px;
+    
+    }
+
+    #box-form h1 {
+        font-size: 30px;
+    }
+    
+    #box-form > Form > .baseline {
+        margin: 10px 0;
+    }
+    
+    #box-form > Form label {
+        font-size: 18px;
+        margin: 0px 0px  10px;
+    }
+    
+    .input-box {
+        border: 2px black solid;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px;
+        width: 400px;
+        resize: none;
+    }
+    
+    #box-form > Form button {
+        padding: 5px 60px 5px 60px;
+        color: white;
+        background-color: #FCE078;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+    /* footer  */
     footer > .footer-logo > img {
         height: 150px;
         display: flex;
@@ -235,8 +602,6 @@ footer > .other-info > .des > p {
     .icons > img {
         height: 2rem;
     }
-
-
 }
 
 /* Tablets */
@@ -305,7 +670,7 @@ footer > .other-info > .des > p {
         left: 0; 
         right: 0; 
         bottom: 0;
-        background-image: url(dropdown-menu-bg.png);
+        background-image: url(homepage_img/dropdown-menu-bg.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -341,7 +706,118 @@ footer > .other-info > .des > p {
     .box > .middlebox > img {
         width: 50%;
     }
+
+    .first-sp {
+        & h1 {
+            font-size: 40px;
+        }
+        & h5 {
+            font-size: 13px;
+        }
+        & #readmore-sp {
+            padding: 5px;
+            font-size: 10px;
+        }
+        & #readmore-sp:hover {
+            background-color: white;    
+        }
+    }
+
+    .second-sp > img {
+        height: 60vh;
+        width: auto;
+    }
+
+    .first-tp {
+        padding-left: 20px;
+        font-size: 40px;
+        padding-bottom: 15px;
+        font-weight: 700;
+    }
     
+    .second-tp  > img{
+        height: 35vh;
+        width: auto;
+    }
+
+
+    .first-fp > img {
+        margin: 5px;
+        height: 50vh;
+        width: auto;
+    }
+     
+    .second-fp {
+        flex-direction: column;
+        padding: 15px;
+        & h1 {
+            padding: 2rem 0 1rem 0;
+            font-weight: 700;
+            font-size: 40px;
+        }
+        & h5 {
+            padding: 0 0 8px 0;
+            font-size: 12px;
+        }
+        & button {
+            border: black solid;
+            background-color: transparent;
+            padding: 3px 8px 3px 8px;
+            & a {
+                font-size: 12px;
+            }
+        }
+        & img {
+
+            height: 6vh;
+            width: auto;
+        }
+    }
+
+    .contact-us-label > img {
+        height: 40vh;
+        width: auto;
+    }
+
+    
+    #box-form > Form {
+        padding: 15px;
+        margin: 10px;
+    
+    }
+
+    #box-form h1 {
+        font-size: 20px;
+    }
+    
+    #box-form > Form > .baseline {
+        margin: 10px 0;
+    }
+    
+    #box-form > Form label {
+        font-size: 15px;
+        margin: 0px 0px  10px;
+    }
+    
+    .input-box {
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 15px;
+        width: 300px;
+        resize: none;
+    }
+    
+    #box-form > Form button {
+        padding: 5px 50px 5px 50px;
+        color: white;
+        background-color: #FCE078;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+
+    /* this is a footer */
     footer {
         height: fit-content;
         display: flex;
@@ -367,8 +843,9 @@ footer > .other-info > .des > p {
     }
 }
 
-/* small phones */
 
+
+/* small phones */
 @media (max-width: 640px) {
     .body {
         max-width: 475px;
@@ -419,6 +896,122 @@ footer > .other-info > .des > p {
 
     }
 
+    .first-sp {
+        & h1 {
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        & h5 {
+            font-size: 10px;
+            padding-bottom: 10px;
+        }
+        & #readmore-sp {
+            padding: 4px;
+            font-size: 10px;
+        }
+        & #readmore-sp:hover {
+            background-color: white;    
+        }
+    }
+
+    .second-sp > img {
+        height: 50vh;
+        width: auto;
+    }
+
+
+    .second-tp  > img{
+        height: 25vh;
+        width: auto;
+    }
+
+    #seemore-tp > button {
+        padding: 4px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 15rem;
+        font-size: 15px;
+    }
+    
+    .first-fp > img {
+        margin: 5px;
+        height: 40vh;
+        width: auto;
+    }
+     
+    .second-fp {
+        flex-direction: column;
+        padding: 10px;
+        & h1 {
+            padding: 2rem 0 1rem 0;
+            font-weight: 700;
+            font-size: 30px;
+        }
+        & h5 {
+            padding: 0 0 8px 0;
+            font-size: 12px;
+        }
+        & button {
+            border: black solid;
+            background-color: transparent;
+            padding: 3px 8px 3px 8px;
+            & a {
+                font-size: 12px;
+            }
+        }
+        & img {
+
+            height: 5vh;
+            width: auto;
+        }
+    }
+
+
+    .contact-us-label > img {
+        height: 35vh;
+        width: auto;
+    }
+
+    
+    #box-form > Form {
+        padding: 8px;
+        margin: 5px;
+    
+    }
+
+    #box-form h1 {
+        font-size: 20px;
+    }
+    
+    #box-form > Form > .baseline {
+        margin: 4px 0;
+    }
+    
+    #box-form > Form label {
+        font-size: 12px;
+        margin: 0px 0px  8px;
+    }
+    
+    .input-box {
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 12px;
+        width: 200px;
+        resize: none;
+    }
+    
+    #box-form > Form button {
+        padding: 5px 50px 5px 50px;
+        color: white;
+        background-color: #FCE078;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+
+
+    /* this is a footer */
     footer {
         height: fit-content;
         display: flex;
@@ -441,14 +1034,14 @@ footer > .other-info > .des > p {
     }
 
     .description > p {
-        font-size: 16px; 
+        font-size: 14px; 
     }
 
 }
 
 /* smallest phones */
 
-@media (max-width: 475px) {
+@media (max-width: 476px) {
     .body {
         max-width: none;
         width: 100%;
@@ -481,6 +1074,133 @@ footer > .other-info > .des > p {
         width: 100%;
     }
 
+    .first-sp {
+        padding-left: 2rem;
+        & h1 {
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        & h5 {
+            font-size: 8px;
+            padding-bottom: 8px;
+        }
+        & #readmore-sp {
+            padding: 2px;
+            font-size: 8px;
+        }
+        & #readmore-sp:hover {
+            background-color: white;    
+        }
+    }
+
+    .second-sp > img {
+        height: 40vh;
+        width: auto;
+    }
+
+    .first-fp > img {
+        margin: 5px;
+        height: 30vh;
+        width: auto;
+    }
+     
+    .second-fp {
+        flex-direction: column;
+        padding: 10px;
+        & h1 {
+            padding: 2rem 0 1rem 0;
+            font-weight: 700;
+            font-size: 25px;
+        }
+        & h5 {
+            padding: 0 0 8px 0;
+            font-size: 10px;
+        }
+        & button {
+            border: black solid;
+            background-color: transparent;
+            padding: 2px 5px 2px 5px;
+            & a {
+                font-size: 10px;
+            }
+        }
+        & img {
+
+            height: 5vh;
+            width: auto;
+        }
+    }
+    /* this is our products */
+
+    .first-tp {
+        padding-left: 0px;
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .second-tp  > img{
+        height: 20vh;
+        width: auto;
+    }
+
+    #seemore-tp > button {
+        padding: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 15rem;
+        font-size: 12px;
+    }
+
+    .contact-us-label {
+        margin: 10px;
+    }
+
+    .contact-us-label > img {
+        height: 25vh;
+        width: auto;
+    }
+
+    
+    #box-form > Form {
+        padding: 0px;
+        margin: 0px;
+    
+    }
+
+    #box-form h1 {
+        font-size: 15px;
+    }
+    
+    #box-form > Form > .baseline {
+        margin: 5px 0;
+    }
+    
+    #box-form > Form label {
+        font-size: 10px;
+        margin: 0px 0px  8px;
+    }
+    
+    .input-box {
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 10px;
+        width: 150px;
+        resize: none;
+    }
+    
+    #box-form > Form button {
+        padding: 2px 30px 2px 30px;
+        color: white;
+        background-color: #FCE078;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+
+    
+    /* this is a footer */
+
     footer {
         height: fit-content;
         display: flex;
@@ -500,6 +1220,11 @@ footer > .other-info > .des > p {
         display: flex;
         align-items: center;
         justify-content: center;
+        & p {
+            font-size: 10px; 
+        }
     }
+
+
 
 }
