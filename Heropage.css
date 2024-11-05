@@ -15,7 +15,7 @@ body, html {
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    display: none
 }
 
 /*  Header */
@@ -151,8 +151,7 @@ nav ul li a:hover {
         font-size: 20px;
         font-weight: 700;
         background-color: transparent;
-        transition: 1.0s;
-        transition-delay: 0.1s;
+        transition: 0.4s ease-in-out;
     }
     & #readmore-sp:hover {
         background-color: white;    
@@ -200,24 +199,22 @@ nav ul li a:hover {
         padding-right: 2rem;
         border-radius: 20rem;
         font-size: 20px;
-        background-color: #D70000;
+        background-color: #D70000;  
         border: none;
-        transition: 1s;
-        transition-delay: 0.1s;
+        transition: 0.4s ease-in-out;
+    & a {
+        color: white;
+    }
     }
     & button:hover {
         background-color: white;
         border: 2px black solid;
-    }
-    & a {
-        color: white;
-        transition: 1s;
-        transition-delay: 0.1s; 
-    }
-    & a:hover {
-        color: black;
-
-    }   
+        & a {
+            color: black;
+            transition: 1s;
+            transition-delay: 0.1s; 
+        }
+    }  
 }
 
 #forth-page {
@@ -1289,7 +1286,7 @@ footer > .other-info > .des > p {
 
     .first-fp > img {
         margin: 5px;
-        height: 20vh;
+        height: 25vh;
         width: auto;
     }
      
@@ -1360,7 +1357,7 @@ footer > .other-info > .des > p {
     }
 
     #box-form h1 {
-        font-size: 15px;
+        font-size: 10px;
     }
     
     #box-form > Form > .baseline {
@@ -1368,23 +1365,23 @@ footer > .other-info > .des > p {
     }
     
     #box-form > Form label {
-        font-size: 10px;
+        font-size: 8px;
         margin: 0px 0px  2px;
     }
     
     .input-box {
-        border-radius: 5px;
-        padding: 5px;
-        font-size: 10px;
-        width: 150px;
+        border-radius: 4px;
+        padding: 3px;
+        font-size: 8px;
+        width: 120px;
         resize: none;
     }
     
     #box-form > Form button {
-        padding: 2px 30px 2px 30px;
+        padding: 2px 25px 2px 25px;
         color: white;
         background-color: #FCE078;
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 600;
         border-radius: 5px;
     }
