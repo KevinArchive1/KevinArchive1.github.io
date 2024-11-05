@@ -1320,21 +1320,21 @@ footer > .other-info > .des > p {
 
     .first-tp {
         padding-left: 0px;
-        font-size: 25px;
-        padding-bottom: 10px;
+        font-size: 15px;
+        padding-bottom: 8px;
     }
 
     .second-tp  > img{
-        height: 20vh;
+        height: 15vh;
         width: auto;
     }
 
     #seemore-tp > button {
         padding: 4px;
-        padding-left: 12px;
-        padding-right: 12px;
-        border-radius: 15rem;
-        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 12rem;
+        font-size: 8px;
     }
 
     .contact-us-label {
