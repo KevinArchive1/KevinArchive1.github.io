@@ -1043,7 +1043,7 @@ footer > .other-info > .des > p {
 
 @media (max-width: 476px) {
     .body {
-        max-width: 320;
+        max-width: 375px;
     }
 
     .MainHeader {
@@ -1230,25 +1230,52 @@ footer > .other-info > .des > p {
 }
 
 
-@media (max-width: 320) {
+@media (max-width: 376px) {
     .body {
         max-width: none;
+        width: 100%;
+    }
+    .MainHeader {
+        padding: 2px; 
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin: 0px 0px 0px 0px;
+        padding: 18px;
+
+    }
+
+    .MainHeader > .logo > img {
+        width: 4rem; 
+        padding: 0; 
+    }
+
+    nav {
+        display: block;
+    }
+
+    .content {
+        padding: 0; 
+    }
+
+    .box > .middlebox{
         width: 100%;
     }
 
     .first-sp {
         padding-left: 2rem;
         & h1 {
-            font-size: 25px;
+            font-size: 20px;
             padding-bottom: 5px;
         }
         & h5 {
             font-size: 8px;
-            padding-bottom: 8px;
+            padding-bottom: 5px;
         }
         & #readmore-sp {
             padding: 2px;
-            font-size: 8px;
+            font-size: 5px;
         }
         & #readmore-sp:hover {
             background-color: white;    
@@ -1256,13 +1283,13 @@ footer > .other-info > .des > p {
     }
 
     .second-sp > img {
-        height: 40vh;
+        height: 30vh;
         width: auto;
     }
 
     .first-fp > img {
         margin: 5px;
-        height: 30vh;
+        height: 20vh;
         width: auto;
     }
      
@@ -1270,20 +1297,20 @@ footer > .other-info > .des > p {
         flex-direction: column;
         padding: 10px;
         & h1 {
-            padding: 2rem 0 1rem 0;
+            padding: 1rem 0 0.5rem 0;
             font-weight: 700;
-            font-size: 25px;
+            font-size: 15px;
         }
         & h5 {
             padding: 0 0 8px 0;
-            font-size: 10px;
+            font-size: 5px;
         }
         & button {
             border: black solid;
             background-color: transparent;
-            padding: 2px 5px 2px 5px;
+            padding: 1px 3px 1px 3px;
             & a {
-                font-size: 10px;
+                font-size: 5px;
             }
         }
         & img {
@@ -1314,7 +1341,7 @@ footer > .other-info > .des > p {
     }
 
     .contact-us-label {
-        margin: 10px;
+        margin: 0px;
     }
 
     .contact-us-label > img {
@@ -1360,5 +1387,33 @@ footer > .other-info > .des > p {
         font-size: 10px;
         font-weight: 600;
         border-radius: 5px;
+    }
+
+
+    
+    /* this is a footer */
+
+    footer {
+        height: fit-content;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+
+    }
+
+    footer > .footer-logo > img {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description, .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & p {
+            font-size: 10px; 
+        }
     }
 }
