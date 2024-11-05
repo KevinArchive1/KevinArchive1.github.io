@@ -271,6 +271,7 @@ nav ul li a:hover {
         display: flex;
         justify-content: end;
         align-items: end;
+
     }
     & img {
         justify-content: end;
@@ -282,6 +283,8 @@ nav ul li a:hover {
 
 #fifth-page {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(homepage_img/image.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1104,25 +1107,24 @@ footer > .other-info > .des > p {
         flex-direction: column;
         padding: 10px;
         & h1 {
-            padding: 2rem 0 1rem 0;
+            padding: 1.5rem 0 10px 0;
             font-weight: 700;
-            font-size: 25px;
+            font-size: 20px;
         }
         & h5 {
             padding: 0 0 8px 0;
-            font-size: 10px;
+            font-size: 8px;
         }
         & button {
             border: black solid;
             background-color: transparent;
             padding: 2px 5px 2px 5px;
             & a {
-                font-size: 10px;
+                font-size: 8px;
             }
         }
         & img {
-
-            height: 5vh;
+            height: 3vh;
             width: auto;
         }
     }
@@ -1260,14 +1262,18 @@ footer > .other-info > .des > p {
         width: 100%;
     }
 
+    #second-page {
+        background-size: 100% 40%;
+    }
+
     .first-sp {
         padding-left: 2rem;
         & h1 {
-            font-size: 20px;
+            font-size: 15px;
             padding-bottom: 5px;
         }
         & h5 {
-            font-size: 8px;
+            font-size: 5px;
             padding-bottom: 5px;
         }
         & #readmore-sp {
@@ -1312,7 +1318,7 @@ footer > .other-info > .des > p {
         }
         & img {
 
-            height: 5vh;
+            height: 3vh;
             width: auto;
         }
     }
@@ -1335,6 +1341,10 @@ footer > .other-info > .des > p {
         padding-right: 8px;
         border-radius: 12rem;
         font-size: 8px;
+    }
+
+    #forth-page {
+        background-size: 100% 50%;
     }
 
     .contact-us-label {
