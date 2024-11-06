@@ -8,8 +8,8 @@ body, html {
     position: relative;
     margin: 0;
     box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
@@ -18,13 +18,10 @@ body::-webkit-scrollbar {
     display: none
 }
 
-/*  Header */
+/*  Header  to fox this later */ 
 .MainHeader {
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 120px;
-    width: 100%;
+    display: flex;
     background-color: white;
     text-align: center;
     color: white;
@@ -33,17 +30,19 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px -1px 5px black;
-    z-index: 1000;
+    width: 100%;
+    height: auto;
+    z-index: 1;
 }
 
 .MainHeader >  .logo > img {
-    width: 10rem;
+    width: 6rem;
     padding-left: 2rem;
 }
 
-
 a {
     color: black;
+    font-size: 20px;
     text-decoration: none;
     font-weight: 800;
 }
@@ -55,7 +54,7 @@ nav ul li a:hover {
 .account-icon {
     display: flex;
     height: 100%;
-    padding: 35px;
+    padding: 18px;
     background-color: red;
 }
 
@@ -96,7 +95,7 @@ nav ul li a:hover {
 .content {
     vertical-align: top;
     flex: 1;
-    padding-top: 120px;
+    padding-top: 85px;
 }
 
 .box {
@@ -147,11 +146,16 @@ nav ul li a:hover {
         text-align: justify;
     }
     & #readmore-sp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
-        font-size: 20px;
-        font-weight: 700;
         background-color: transparent;
         transition: 0.4s ease-in-out;
+        & a {
+            font-size: 20px;
+            font-weight: 700;
+        }
     }
     & #readmore-sp:hover {
         background-color: white;    
@@ -162,8 +166,8 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85vh;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 #third-page {
@@ -179,15 +183,15 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-.second-tp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.second-tp  > .image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     & img {
-        height: 60vh;
-        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 }
+
 
 #seemore-tp {
     display: flex;
@@ -202,9 +206,11 @@ nav ul li a:hover {
         background-color: #D70000;  
         border: none;
         transition: 0.4s ease-in-out;
-    & a {
-        color: white;
-    }
+        & a {
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
     }
     & button:hover {
         background-color: white;
@@ -226,25 +232,28 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 60%;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .first-fp {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 2rem;
+    width: 60%;
+    height: auto;
     & img {
         display: flex;
         align-items: center;
-        margin: 2rem;
-        height: 80vh;
-        width: auto;
+        justify-content: center;
+        height: auto;
+        width: 100%;
     }
 }
-
 
 .second-fp {
     flex-direction: column;
     padding: 20px;
+    width: 40%;
+    height: auto;
     & h1 {
         padding: 2rem 0 1rem 0;
         font-weight: 700;
@@ -271,13 +280,10 @@ nav ul li a:hover {
         display: flex;
         justify-content: end;
         align-items: end;
-
-    }
-    & img {
-        justify-content: end;
-        align-items: end;
-        height: 10vh;
-        width: auto;
+        & img {
+            height: 10vh;
+            width: auto;
+        }
     }
 }
 
@@ -290,19 +296,15 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     height: 100%;
-    width: 100%;
-}
-
-.contact-us-label {
-    text-align: center; 
-    margin: 20px; 
-
-}
-
-.contact-us-label > img {
-    height: 70vh;
     width: auto;
-    color: #333; /* Example style */
+    & .contact-us-label {
+        text-align: center;
+        & img {
+            display: flex;
+            height: auto;
+            width: 100%;
+        }
+    }
 }
 
 .content-us-form  {
@@ -322,24 +324,23 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
+    & Form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        padding: 20px;
+        margin: 10px;
+
+        & .baseline {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+    }
 }
 
-#box-form > Form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    padding: 20px;
-    margin: 10px;
-
-}
-
-#box-form > Form > .baseline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 0;
-}
 
 #box-form > Form label {
     font-size: 20px;
@@ -435,28 +436,13 @@ footer > .other-info > .des > p {
         max-width: 768px;
     }
 
-    .MainHeader { 
-        padding: 10px; 
-        height: 90px;
-    }
-
-    .MainHeader > .logo > img {
-        width: 8rem; 
-        padding: 15px; 
-    }
-
-    .account-icon {
-        height: 100%;
-        padding: 30px;
-    }
-
     .menu-items { 
         font-size: 22px; 
     }
 
     /* the content */
     .content {
-        padding-top: 110px; 
+        padding-top: 85px; 
     }
 
     .box > .middlebox{
@@ -472,17 +458,14 @@ footer > .other-info > .des > p {
             font-size: 15px;
         }
         & #readmore-sp {
-            padding: 6px;
-            font-size: 15px;
+            padding: 8px;
+            & a {
+                font-size: 15px;
+            }
         }
         & #readmore-sp:hover {
             background-color: white;    
         }
-    }
-
-    .second-sp > img {
-        height: 80vh;
-        width: auto;
     }
 
     .first-tp {
@@ -490,16 +473,6 @@ footer > .other-info > .des > p {
         font-size: 50px;
         padding-bottom: 15px;
         font-weight: 700;
-    }
-    
-    .second-tp  > img{
-        height: 50vh;
-        width: auto;
-    }
-
-    .first-fp > img {
-        height: 60vh;
-        width: auto;
     }
      
     .second-fp {
@@ -523,15 +496,12 @@ footer > .other-info > .des > p {
                 font-size: 15px;
             }
         }
-        & img {
-            height: 10vh;
-            width: auto;
+        & #arrows{
+            & img {
+                height: 8vh;
+                width: auto;
+            }
         }
-    }
-
-    .contact-us-label > img {
-        height: 60vh;
-        width: auto;
     }
 
     
@@ -612,30 +582,22 @@ footer > .other-info > .des > p {
         width: 100%;
     }
     
-    .MainHeader {  
-        display: flex;
-        justify-content: space-between;
-        height: 90px;
-    }
-    
     .menu-items {
         display: none;
     }
 
     .content {
-        padding-top: 100px; 
+        padding-top: 80px; 
     }
 
     .hamburger-menu {
         display: block;
-        margin: 10px;
         background-color: #D70000;
-        padding: 30px;
+        padding: 15px;
     }
 
     .MainHeader > .logo > img {
-        width: 8rem; 
-        padding: 15px; 
+        width: 6rem; 
     }
 
     .account-icon {
@@ -716,35 +678,21 @@ footer > .other-info > .des > p {
         }
         & #readmore-sp {
             padding: 5px;
-            font-size: 10px;
+            & a {
+                font-size: 10px;
+            }
         }
         & #readmore-sp:hover {
             background-color: white;    
         }
     }
 
-    .second-sp > img {
-        height: 60vh;
-        width: auto;
-    }
 
     .first-tp {
         padding-left: 20px;
         font-size: 40px;
         padding-bottom: 15px;
         font-weight: 700;
-    }
-    
-    .second-tp  > img{
-        height: 35vh;
-        width: auto;
-    }
-
-
-    .first-fp > img {
-        margin: 5px;
-        height: 50vh;
-        width: auto;
     }
      
     .second-fp {
@@ -767,18 +715,13 @@ footer > .other-info > .des > p {
                 font-size: 12px;
             }
         }
-        & img {
-
-            height: 6vh;
-            width: auto;
+        & #arrows{
+            & img {
+                height: 6vh;
+                width: auto;
+            }
         }
     }
-
-    .contact-us-label > img {
-        height: 40vh;
-        width: auto;
-    }
-
     
     #box-form > Form {
         padding: 15px;
@@ -852,7 +795,6 @@ footer > .other-info > .des > p {
     }
 
     .MainHeader {
-        padding: 10px; 
         height: 70px;
     }
     
@@ -864,7 +806,7 @@ footer > .other-info > .des > p {
 
     .hamburger-menu {
         display: block;
-        padding: 25px;
+        padding: 15px;
 
     }
 
@@ -880,11 +822,6 @@ footer > .other-info > .des > p {
         padding-top: 90px; 
     }
     
-    .MainHeader > .logo > img {
-        width: 6rem; 
-        padding: 0; 
-    }
-
 
     .content {
         padding: 0; 
@@ -907,23 +844,16 @@ footer > .other-info > .des > p {
         }
         & #readmore-sp {
             padding: 4px;
-            font-size: 10px;
+            & a {
+                font-size: 10px;
+            }
         }
         & #readmore-sp:hover {
             background-color: white;    
         }
     }
 
-    .second-sp > img {
-        height: 50vh;
-        width: auto;
-    }
 
-
-    .second-tp  > img{
-        height: 25vh;
-        width: auto;
-    }
 
     #seemore-tp > button {
         padding: 4px;
@@ -931,12 +861,6 @@ footer > .other-info > .des > p {
         padding-right: 1rem;
         border-radius: 15rem;
         font-size: 15px;
-    }
-    
-    .first-fp > img {
-        margin: 5px;
-        height: 40vh;
-        width: auto;
     }
      
     .second-fp {
@@ -959,19 +883,13 @@ footer > .other-info > .des > p {
                 font-size: 12px;
             }
         }
-        & img {
-
-            height: 5vh;
-            width: auto;
+        & #arrows{
+            & img {
+                height: 5vh;
+                width: auto;
+            }
         }
     }
-
-
-    .contact-us-label > img {
-        height: 35vh;
-        width: auto;
-    }
-
     
     #box-form > Form {
         padding: 8px;
@@ -1046,10 +964,6 @@ footer > .other-info > .des > p {
         max-width: 375px;
     }
 
-    .MainHeader {
-        padding: 10px; 
-    }
-
     .hamburger-menu {
         display: block;
         margin-left: 2rem;
@@ -1058,7 +972,6 @@ footer > .other-info > .des > p {
 
     .MainHeader > .logo > img {
         width: 5rem; 
-        padding: 0; 
     }
 
     nav {
@@ -1084,23 +997,14 @@ footer > .other-info > .des > p {
             padding-bottom: 8px;
         }
         & #readmore-sp {
-            padding: 2px;
-            font-size: 8px;
+            padding: 2px;            
+            & a {
+                font-size: 7px;
+            }
         }
         & #readmore-sp:hover {
             background-color: white;    
         }
-    }
-
-    .second-sp > img {
-        height: 40vh;
-        width: auto;
-    }
-
-    .first-fp > img {
-        margin: 5px;
-        height: 30vh;
-        width: auto;
     }
      
     .second-fp {
@@ -1123,9 +1027,11 @@ footer > .other-info > .des > p {
                 font-size: 8px;
             }
         }
-        & img {
-            height: 3vh;
-            width: auto;
+        & #arrows{
+            & img {
+                height: 4vh;
+                width: auto;
+            }
         }
     }
     /* this is our products */
@@ -1136,10 +1042,6 @@ footer > .other-info > .des > p {
         padding-bottom: 10px;
     }
 
-    .second-tp  > img{
-        height: 20vh;
-        width: auto;
-    }
 
     #seemore-tp > button {
         padding: 4px;
@@ -1147,15 +1049,6 @@ footer > .other-info > .des > p {
         padding-right: 12px;
         border-radius: 15rem;
         font-size: 12px;
-    }
-
-    .contact-us-label {
-        margin: 10px;
-    }
-
-    .contact-us-label > img {
-        height: 20vh;
-        width: auto;
     }
 
     #box-form {
@@ -1234,21 +1127,6 @@ footer > .other-info > .des > p {
         max-width: none;
         width: 100%;
     }
-    .MainHeader {
-        padding: 2px; 
-    }
-
-    .hamburger-menu {
-        display: block;
-        margin: 0px 0px 0px 0px;
-        padding: 18px;
-
-    }
-
-    .MainHeader > .logo > img {
-        width: 4rem; 
-        padding: 0; 
-    }
 
     nav {
         display: block;
@@ -1278,22 +1156,13 @@ footer > .other-info > .des > p {
         }
         & #readmore-sp {
             padding: 2px;
-            font-size: 5px;
+            & a {
+                font-size: 6px;
+            }
         }
         & #readmore-sp:hover {
             background-color: white;    
         }
-    }
-
-    .second-sp > img {
-        height: 30vh;
-        width: auto;
-    }
-
-    .first-fp > img {
-        margin: 5px;
-        height: 25vh;
-        width: auto;
     }
      
     .second-fp {
@@ -1316,10 +1185,11 @@ footer > .other-info > .des > p {
                 font-size: 5px;
             }
         }
-        & img {
-
-            height: 3vh;
-            width: auto;
+        & #arrows{
+            & img {
+                height: 3vh;
+                width: auto;
+            }
         }
     }
     /* this is our products */
@@ -1330,31 +1200,17 @@ footer > .other-info > .des > p {
         padding-bottom: 8px;
     }
 
-    .second-tp  > img{
-        height: 16vh;
-        width: auto;
-    }
 
     #seemore-tp > button {
         padding: 4px;
         padding-left: 8px;
         padding-right: 8px;
         border-radius: 12rem;
-        font-size: 8px;
+        & a {
+            font-size: 8px;
+        }
     }
 
-    #forth-page {
-        background-size: 100% 50%;
-    }
-
-    .contact-us-label {
-        margin: 0px;
-    }
-
-    .contact-us-label > img {
-        height: 20vh;
-        width: auto;
-    }
 
     #box-form {
         padding: 10px;
