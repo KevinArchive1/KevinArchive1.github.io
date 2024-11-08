@@ -113,198 +113,24 @@ nav ul li a:hover {
     }
 }
 
-
-#first-page > img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-#second-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(homepage_img/second-bg-img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.first-sp {
-    padding-left: 3rem;
-    & h1 {
-        font-size: 60px;
-    }
-    & h5 {
-        font-size: 20px;
-        padding-bottom: 10px;
-        text-align: justify;
-    }
-    & #readmore-sp {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        background-color: transparent;
-        transition: 0.4s ease-in-out;
-        & a {
-            font-size: 20px;
-            font-weight: 700;
-        }
-    }
-    & #readmore-sp:hover {
-        background-color: white;    
-    }
-}
-
-.second-sp > img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    width: 100%;
-}
-
-#third-page {
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.first-tp {
-    padding-left: 20px;
-    font-size: 60px;
-    padding-bottom: 15px;
-    font-weight: 700;
-}
-
-.second-tp  > .image-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    & img {
-        height: auto;
-        max-width: 100%;
-    }
-}
-
-
-#seemore-tp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & button {
-        padding: 5px;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        border-radius: 20rem;
-        font-size: 20px;
-        background-color: #D70000;  
-        border: none;
-        transition: 0.4s ease-in-out;
-        & a {
-            color: white;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    & button:hover {
-        background-color: white;
-        border: 2px black solid;
-        & a {
-            color: black;
-            transition: 1s;
-            transition-delay: 0.1s; 
-        }
-    }  
-}
-
-#forth-page {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-image: url(homepage_img/second-bg-img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 60%;
-    padding: 2rem 0 2rem 0;
-}
-
-.first-fp {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    margin: 2rem;
-    width: 60%;
-    height: auto;
-    & img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        width: 100%;
-    }
-}
-
-.second-fp {
-    flex-direction: column;
-    padding: 20px;
-    width: 60%;
-    height: auto;
-    margin-top: 20px;
-    & h1 {
-        font-weight: 700;
-        font-size: 60px;
-    }
-    & h5 {
-        padding-bottom: 10px;
-        font-weight: 700;
-        font-size: 18px;
-        text-align: justify;
-    }
-    & button {
-        border: black solid;
-        background-color: transparent;
-        padding: 5px 10px 5px 10px;
-        & a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-        }
-    }
-    & #arrows {
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        & img {
-            height: 10vh;
-            width: auto;
-        }
-    }
-}
-
 #fifth-page {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    justify-content: space-around;
     background-image: url(homepage_img/image.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
     width: auto;
-    & .contact-us-label {
-        text-align: center;
-        padding: 1rem;
-        & img {
-            display: flex;
-            height: auto;
-            width: 100%;
-        }
+}
+
+& .contact-us-label {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    & img {
+        height: auto;
+        width: 100%;
     }
 }
 
@@ -430,7 +256,6 @@ footer > .other-info > .des > p {
     cursor: pointer;
 }
 
-/* Laptop */
 
 @media (max-width: 1024px) {
     .body {
@@ -449,58 +274,6 @@ footer > .other-info > .des > p {
     .box > .middlebox{
         display: flex;
         width: 100%;
-    }
-
-    .first-sp {
-        & h1 {
-            font-size: 50px;
-        }
-        & h5 {
-            font-size: 15px;
-        }
-        & #readmore-sp {
-            padding: 8px;
-            & a {
-                font-size: 15px;
-            }
-        }
-        & #readmore-sp:hover {
-            background-color: white;    
-        }
-    }
-
-    .first-tp {
-        padding-left: 20px;
-        font-size: 50px;
-        padding-bottom: 15px;
-        font-weight: 700;
-    }
-     
-    .second-fp {
-        flex-direction: column;
-        padding: 18px;
-        & h1 {
-            font-weight: 700;
-            font-size: 50px;
-        }
-        & h5 {
-            font-weight: 700;
-            font-size: 15px;
-        }
-        & button {
-            border: black solid;
-            background-color: transparent;
-            padding: 5px 10px 5px 10px;
-            & a {
-                font-size: 15px;
-            }
-        }
-        & #arrows{
-            & img {
-                height: 8vh;
-                width: auto;
-            }
-        }
     }
 
     
@@ -668,57 +441,6 @@ footer > .other-info > .des > p {
         width: 50%;
     }
 
-    .first-sp {
-        & h1 {
-            font-size: 40px;
-        }
-        & h5 {
-            font-size: 13px;
-        }
-        & #readmore-sp {
-            padding: 5px;
-            & a {
-                font-size: 10px;
-            }
-        }
-        & #readmore-sp:hover {
-            background-color: white;    
-        }
-    }
-
-
-    .first-tp {
-        padding-left: 20px;
-        font-size: 40px;
-        padding-bottom: 15px;
-        font-weight: 700;
-    }
-     
-    .second-fp {
-        flex-direction: column;
-        padding: 15px;
-        & h1 {
-            font-weight: 700;
-            font-size: 40px;
-        }
-        & h5 {
-            font-size: 12px;
-        }
-        & button {
-            border: black solid;
-            background-color: transparent;
-            padding: 3px 8px 3px 8px;
-            & a {
-                font-size: 12px;
-            }
-        }
-        & #arrows{
-            & img {
-                height: 6vh;
-                width: auto;
-            }
-        }
-    }
     
     #box-form > Form {
         padding: 15px;
@@ -829,61 +551,6 @@ footer > .other-info > .des > p {
         width: 100%;
 
     }
-
-    .first-sp {
-        & h1 {
-            font-size: 25px;
-        }
-        & h5 {
-            font-size: 10px;
-            padding-bottom: 10px;
-        }
-        & #readmore-sp {
-            padding: 4px;
-            & a {
-                font-size: 10px;
-            }
-        }
-        & #readmore-sp:hover {
-            background-color: white;    
-        }
-    }
-
-
-
-    #seemore-tp > button {
-        padding: 4px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        border-radius: 15rem;
-        font-size: 15px;
-    }
-     
-    .second-fp {
-        flex-direction: column;
-        padding: 10px;
-        & h1 {
-            font-weight: 700;
-            font-size: 30px;
-        }
-        & h5 {
-            font-size: 10px;
-        }
-        & button {
-            border: black solid;
-            background-color: transparent;
-            padding: 3px 8px 3px 8px;
-            & a {
-                font-size: 12px;
-            }
-        }
-        & #arrows{
-            & img {
-                height: 5vh;
-                width: auto;
-            }
-        }
-    }
     
     #box-form > Form {
         padding: 8px;
@@ -980,68 +647,6 @@ footer > .other-info > .des > p {
         width: 100%;
     }
 
-    .first-sp {
-        padding-left: 1rem;
-        & h1 {
-            font-size: 25px;
-        }
-        & h5 {
-            font-size: 8px;
-            padding-bottom: 8px;
-        }
-        & #readmore-sp {
-            padding: 2px;            
-            & a {
-                font-size: 7px;
-            }
-        }
-        & #readmore-sp:hover {
-            background-color: white;    
-        }
-    }
-     
-    .second-fp {
-        flex-direction: column;
-        padding: 10px;
-        & h1 {
-            font-weight: 700;
-            font-size: 20px;
-        }
-        & h5 {
-            font-size: 8px;
-        }
-        & button {
-            border: black solid;
-            background-color: transparent;
-            padding: 2px 5px 2px 5px;
-            & a {
-                font-size: 8px;
-            }
-        }
-        & #arrows{
-            & img {
-                height: 4vh;
-                width: auto;
-            }
-        }
-    }
-    /* this is our products */
-
-    .first-tp {
-        padding-left: 0px;
-        font-size: 25px;
-        padding-bottom: 10px;
-    }
-
-
-    #seemore-tp > button {
-        padding: 4px;
-        padding-left: 12px;
-        padding-right: 12px;
-        border-radius: 15rem;
-        font-size: 12px;
-    }
-
     #box-form {
         padding: 10px;
     }
@@ -1131,73 +736,6 @@ footer > .other-info > .des > p {
         width: 100%;
     }
 
-    #second-page {
-        background-size: 100% 40%;
-    }
-
-    .first-sp {
-        padding-left: 1rem;
-        & h1 {
-            font-size: 15px;
-        }
-        & h5 {
-            font-size: 6px;
-            padding-bottom: 5px;
-        }
-        & #readmore-sp {
-            padding: 2px;
-            & a {
-                font-size: 6px;
-            }
-        }
-        & #readmore-sp:hover {
-            background-color: white;    
-        }
-    }
-     
-    .second-fp {
-        flex-direction: column;
-        padding: 10px;
-        & h1 {
-            font-weight: 700;
-            font-size: 15px;
-        }
-        & h5 {
-            font-size: 6px;
-        }
-        & button {
-            border: black solid;
-            background-color: transparent;
-            padding: 1px 3px 1px 3px;
-            & a {
-                font-size: 5px;
-            }
-        }
-        & #arrows{
-            & img {
-                height: 3vh;
-                width: auto;
-            }
-        }
-    }
-    /* this is our products */
-
-    .first-tp {
-        padding-left: 0px;
-        font-size: 15px;
-        padding-bottom: 8px;
-    }
-
-
-    #seemore-tp > button {
-        padding: 4px;
-        padding-left: 8px;
-        padding-right: 8px;
-        border-radius: 12rem;
-        & a {
-            font-size: 8px;
-        }
-    }
 
 
     #box-form {

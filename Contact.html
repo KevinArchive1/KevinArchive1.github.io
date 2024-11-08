@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bespren Johny's</title>
-    <link rel="stylesheet" href="Heropage.css">
+    <link rel="stylesheet" href="Contact_css.css">
     <link rel="icon" type="image/jpg" href="homepage_img/grapicon.jpg">
 </head>
 <body>
@@ -40,7 +40,36 @@
 
         <div class="box">
             <div class="middlebox">
-                <h1>this is a contact page</h1>
+                <div class="subjects" id="fifth-page">
+                    <div class="contact-us-label">  
+                        <img src="homepage_img/Contact.png" alt="" loading="lazy">
+                    </div>
+                    <div class="contact-us-form">
+                        <div id="box-form">
+                            <h1>
+                                Have Questions? <br>
+                                Send Us a Message!
+                            </h1>
+                            <Form>
+                                <div class="baseline">
+                                    <label for="name">Your name</label>
+                                    <input type="text" id="name" name="name" class="input-box" required>
+                                </div>
+                                <div class="baseline">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="input-box" required>    
+                                </div>
+                                <div class="baseline">
+                                    <label for="message">Massage</label>
+                                    <textarea name="message" rows="5" class="input-box"></textarea>
+                                </div>
+                                <div >
+                                    <button type="submit" >Send</button>
+                                </div>
+                            </Form>
+                        </div>
+                    </div>
+                </div>   
             </div>
         </div>
     </main>
@@ -98,7 +127,6 @@
 
         hamburgerMenu.addEventListener("click", () => {
             menuItems.classList.toggle("show");
-            console.log("kill me")
         });
     });
 </script>
