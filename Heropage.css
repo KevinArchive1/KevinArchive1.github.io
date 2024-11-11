@@ -138,6 +138,7 @@ nav ul li a:hover {
     padding-left: 3rem;
     & h1 {
         font-size: 60px;
+        text-decoration: underline solid black;
     }
     & h5 {
         font-size: 20px;

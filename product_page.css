@@ -1,0 +1,177 @@
+@import url(header-footer.css);
+
+
+.whole{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(./product_page/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    margin: 70px 0px 70px;
+    background-image: linear-gradient(90deg, #D70000 9%, #920000 100%);
+    width:100%;
+    height: 100px;
+    font-size: 2.5rem;
+    font-family: arial;
+    color: white;
+    & #chicken {
+        width: 35%;
+        height: auto;
+    }
+}
+
+
+
+#sauces {
+    display: grid;
+    width: fit-content;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; 
+    gap: 30px;
+    margin-bottom: 100px;
+    
+}
+.dip-sauce{
+    background-color: white;
+    width:320px;
+    border-radius: 10px;
+    border: none;
+}
+
+.dip-sauce:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    border: 3px solid red;
+    
+}
+
+.dip{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sauce_desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+
+}
+
+.sauce_name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    & p{
+        font-size: 0.8rem;
+        color: gray;
+        
+    }
+}
+
+
+
+#others{
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:max-content;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.drinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    margin: 90px 0px 70px;
+    background-image: linear-gradient(90deg, #D70000 9%, #920000 100%);
+    width:100%;
+    height: 100px;
+    font-size: 2.5rem;
+    font-family: arial;
+    color: white;
+}
+
+#coffee_menu{
+    display: flex;
+    gap: 40px;
+    margin-top:20px;
+
+}
+
+.coffee_item{
+    background-color: white;
+    width:200px;
+    height:240px;
+    border-radius: 10px;
+}
+
+.coffee_item:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    border: 3px solid red;
+    
+}
+
+.coffee_bg{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(./product_page/coffee_bg.png);
+    padding: 10px;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.coffee_desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px;
+
+}
+
+.coffee_name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+    & p{
+        font-size: 0.8rem;
+        color: gray;
+    }
+}
+
