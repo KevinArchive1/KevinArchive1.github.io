@@ -133,3 +133,82 @@ body {
     }   
     
 }
+
+@media (max-width: 475px) {
+    #background {
+        background-image: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .form-section {
+        background-image: url(login_img/Login__1_-removebg-preview.png);
+        background-size: contain;
+        height: 100%; 
+        width: 100%; 
+        border-radius: 0;
+        border: none;
+        margin: 5rem 0 5rem 0;
+        & .form-container { 
+            & .logo {
+                & img {
+                    height: auto;
+                    width: 50%;
+                }
+                & .welcome-text {
+
+                    & h1 {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 8vw;
+                    }
+                    & h5 {
+                        color: gray;
+                        font-size: 3vw;
+                    }
+                }
+            }
+            & h1 {
+                margin: 1rem 0 1rem 0;
+                font-size: 8vw;
+            }
+            & form {
+                & .form-group {
+                    width: 100%;
+                    & label {
+                        align-self: flex-start;
+                        padding-left: 3vw;
+                        font-size: 4vw;
+                        font-weight: 700;
+                        padding-bottom: 3px;
+                    }  
+                    & input {
+                        font-size: 4vw;
+                        padding: 2vw;
+                        margin: 5px;
+                        border-radius: 8px;
+                    } 
+                }
+                & .submitCont {
+                    margin-top: 8vw;
+                    width: 65%;
+                    & #submit {
+                        font-size: 4vw;
+                        & a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                    & .others {
+                        & h5 {
+                            font-size: 3vw;
+                        }
+                        & button {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
