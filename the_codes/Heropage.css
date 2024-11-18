@@ -1,0 +1,762 @@
+@import url(header-footer.css);
+
+#first-page {
+    width: 100%;
+}
+
+#first-page > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#second-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(homepage_img/second-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    height: auto;
+    width: 100%;
+    margin: 10rem 0 10rem 0;
+    & .first-sp {
+        padding-left: 3rem;
+        height: 90%;
+        width: 50%;
+        & h1 {
+            font-size: 5vw;
+            text-decoration-line: underline;
+            padding-bottom: 2rem;
+        }
+        & h5 {
+            font-size: 1.8vw;
+            padding-bottom: 10px;
+            text-align: justify;
+            padding-bottom: 2rem;
+        }
+        & #readmore-sp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vw;
+            background-color: transparent;
+            transition: 0.4s ease-in-out;
+            padding: 8px 1rem 8px 1rem;
+            cursor: pointer;
+            & a {
+                font-size: 1.8vw;
+                font-weight: 700;
+            }
+        }
+        & #readmore-sp:hover {
+            background-color: white;
+            transform: scale(1.1);
+            & a {
+                color: black;  
+            }     
+        }
+    }
+    & .second-sp {
+        width: 50%;
+        padding-right: 3rem;
+        & img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+
+#third-page {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    & .first-tp {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 0 2rem 3rem;
+        & img {
+            height: auto;
+            width: 5%;
+        }
+        & h1 {
+            font-size: 4vw;
+        }
+    }
+    & .second-tp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2rem 0;
+        & .image-container {
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            width: 90%;
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    & #seemore-tp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d70000;
+            border: none;
+            border-radius: 1rem;
+            padding: 5px 2rem 5px 2rem;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            & a {
+                font-size: 1.5vw;
+                color: white;
+                
+            }
+        }
+        & button:hover {
+            background-color: white;
+            border: 1px solid black;
+            transform: scale(1.1);
+            & a {
+                color: black;
+            }
+        }
+    }
+}
+
+
+#forth-page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0 3rem;
+    background-image: url(homepage_img/second-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: center;
+    margin: 10rem 0 10rem;
+    & .first-fp {
+        display: flex;
+        justify-content: center;
+        width: 55%;
+        padding: 0 2rem 0 2rem ;
+        & img {
+            height: auto;
+            width: 50%;
+            padding: 0 10px 0 10px ;
+        }
+    }
+    & .second-fp {
+        width: 45%;
+        & .contents {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 1rem 0 1rem;
+            & h1 {
+                font-size: 5vw;
+                padding-bottom: 1rem;
+            }
+            & h5 {
+                font-size: 1.5vw;
+                text-align: justify;
+                padding-bottom: 1rem;   
+            }
+            & button {
+                background-color: transparent;
+                padding: 10px;
+                cursor: pointer;
+                border: 3px black solid;
+                transition: 0.4s ease-in-out;
+                & a {
+                    font-size: 1.5vw;
+                }
+            }
+            & button:hover {
+                background-color: white;
+                transform: scale(1.1);
+                & a {
+                    color: black;
+                }
+            }
+            & #arrows {
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                & img {
+                    height: auto;   
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+/* this is the contacts */
+#fifth-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(homepage_img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.contact-us-label {
+    justify-content: flex-start;
+    width: 100%;
+    height: 40%;
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.contact-us-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    & #box-form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 2px solid;
+        border-radius: 1rem;
+        height: 90%;
+        width: 90%;
+        margin: 1rem;
+        & h1 {
+            text-align: center;
+            padding: 1rem;
+            font-size: 2vw;
+        }
+        & Form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            
+            & .baseline {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 1rem;
+                width: 100%;
+                align-items: center;
+                & label {
+                    padding:  0.5rem 1rem;
+                    align-self: flex-start;
+                    font-size: 1.2vw;
+                    font-weight: 700;
+                }
+                & .input-box {
+                    display: flex;
+                    width: 90%;
+                    padding: 0.8vw;
+                    border-radius: 10px;
+                    box-shadow: 10px black inset;
+                    font-size: 1.2vw;
+                }
+                & textarea.input-box {
+                    resize: none;
+                    height: 100px;
+                }
+            }
+            & button {
+                margin-bottom: 4rem;
+                padding: 10px 3rem 10px 3rem ;
+                font-size: 1.2vw;
+                font-weight: 700;
+                background-color: #FCE078;
+                border: none;
+                border-radius: 10px;
+                transition: 0.2s;
+            }
+            & button:hover {
+                background-color: white;
+                border: 1px solid black ;
+            }
+        }
+    }
+}
+
+
+
+/* Laptop */
+
+@media (max-width: 1024px) {
+/* THIS IS THE SECOND PAGE */
+    #second-page {
+        margin: 8rem 0 8rem 0;
+        & .first-sp {
+            padding-left: 2.5rem;
+            & h1 {
+                font-size: 5vw;
+                padding-bottom: 2rem;
+            }
+            & h5 {
+                font-size: 1.8vw;
+                padding-bottom: 10px;
+                padding-bottom: 2rem;
+            }
+            & #readmore-sp {
+                padding: 1vw;
+                padding: 8px 1rem 8px 1rem;
+                & a {
+                    font-size: 1.8vw;
+                }
+            }
+        }
+        & .second-sp {
+            padding-right: 2.5rem;
+        }
+    }
+/* THIS IS THE FORTH PAGE */
+
+#forth-page {
+    margin: 10rem 0 10rem;
+    & .first-fp {
+        padding: 0 2rem 0 3rem ;
+        & img {
+            padding: 0 10px 0 10px ;
+        }
+    }
+    & .second-fp {
+        & .contents {
+            padding: 0 1rem 0 1rem;
+            & h1 {
+                font-size: 5.5vw;
+                padding-bottom: 1rem;
+            }
+            & h5 {
+                font-size: 1.8vw;
+                padding-bottom: 1rem;   
+            }
+            & button {
+                padding: 10px;
+                & a {
+                    font-size: 1.8vw;
+                }
+            }
+        }
+    }
+}
+
+    /* this is the contacts */
+    .contact-us-form {
+        & #box-form {
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 3vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        font-size: 1.5vw;
+                    }
+                    & .input-box {
+                        padding: 0.8vw;
+                        border-radius: 6px;
+                        font-size: 1.5vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 3rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+/* Tablets */
+
+@media (max-width: 768px) {
+
+/* THIS IS THE SECOND PAGE */
+    #second-page {
+        margin: 8rem 0 8rem 0;
+        & .first-sp {
+            padding-left: 2rem;
+            & h1 {
+                font-size: 5vw;
+                padding-bottom: 1.5rem;
+            }
+            & h5 {
+                font-size: 1.8vw;
+                padding-bottom: 10px;
+                padding-bottom: 1.5rem;
+            }
+            & #readmore-sp {
+                padding: 1vw;
+                padding: 6px 1rem 6px 1rem;
+                & a {
+                    font-size: 1.8vw;
+                }
+            }
+        }
+        & .second-sp {
+            padding-right: 2rem;
+        }
+    }
+
+    #forth-page {
+        margin: 8rem 0 8rem;
+        & .first-fp {
+            padding: 0 1rem 0 2rem ;
+            & img {
+                padding: 0 10px 0 10px ;
+            }
+        }
+        & .second-fp {
+            & .contents {
+                padding: 0 1rem 0 1rem;
+                & h1 {
+                    font-size: 5.5vw;
+                    padding-bottom: 10px;
+                }
+                & h5 {
+                    font-size: 1.8vw;
+                    padding-bottom: 10px;   
+                }
+                & button {
+                    padding: 8px;
+                    & a {
+                        font-size: 1.8vw;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    /* this is the contacts */
+    .contact-us-form {
+        & #box-form {
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 3vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        padding: 0.3rem 0.3rem;
+                        font-size: 2vw;
+                    }
+                    & .input-box {
+                        padding: 0.8vw;
+                        border-radius: 6px;
+                        font-size: 2vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 3rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 2vw;
+                }
+            }
+        }
+    }   
+}
+
+
+
+/* small phones */
+@media (max-width: 640px) {
+
+/* THIS IS THE SECOND PAGE */
+    #second-page {
+        margin: 6rem 0 6rem 0;
+        & .first-sp {
+            padding-left: 2rem;
+            & h1 {
+                font-size: 5vw;
+                padding-bottom: 1rem;
+            }
+            & h5 {
+                font-size: 2vw;
+                padding-bottom: 10px;
+                padding-bottom: 1rem;
+            }
+            & #readmore-sp {
+                padding: 1vw;
+                padding: 5px 12px 5px 12px;
+                & a {
+                    font-size: 2vw;
+                }
+            }
+        }
+        & .second-sp {
+            padding-right: 2rem;
+        }
+    }
+
+    #third-page {
+        & #seemore-tp {
+            & button {
+                padding: 5px 1rem 5px 1rem;
+                transition: 0.4s ease-in-out;
+                cursor: pointer;
+                & a {
+                    font-size: 2vw;    
+                }
+            }
+        }
+    }
+
+    #forth-page {
+        margin: 6rem 0 6rem;
+        & .first-fp {
+            padding: 0 1rem 0 2rem ;
+            & img {
+                padding: 0 4px 0 4px ;
+            }
+        }
+        & .second-fp {
+            & .contents {
+                padding: 0 1rem 0 0 ;
+                & h1 {
+                    font-size: 5.5vw;
+                    padding-bottom: 6px;
+                }
+                & h5 {
+                    font-size: 1.8vw;
+                    padding-bottom: 6px;   
+                }
+                & button {
+                    padding: 4px;
+                    & a {
+                        font-size: 1.8vw;
+                    }
+                } 
+            }
+        }
+    }
+
+    /* this is the contacts */
+    #fifth-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us-label {
+        display: flex;
+        justify-content: center;
+        & img {
+            height: 50%;
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+
+    .contact-us-form {
+        & #box-form {
+            background-image: url(homepage_img/image.png);
+            background-position: bottom left;
+            background-size: auto;
+            background-repeat: no-repeat;
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 5vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        padding: 1rem 1rem;
+                        font-size: 3vw;
+                    }
+                    & .input-box {
+                        padding: 1vw;
+                        border-radius: 6px;
+                        font-size: 3vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 3rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+}
+
+/* smallest phones */
+
+@media (max-width: 476px) {
+
+ /* THIS IS THE SECOND PAGE */
+    #second-page {
+        margin: 4rem 0 4rem 0;
+        & .first-sp {
+            padding-left: 1rem;
+            & h1 {
+                font-size: 5vw;
+                padding-bottom: 8px;
+            }
+            & h5 {
+                font-size: 2vw;
+                padding-bottom: 10px;
+                padding-bottom: 8px;
+            }
+            & #readmore-sp {
+                padding: 1vw;
+                padding: 2px 10px 2px 10px;
+                & a {
+                    font-size: 2vw;
+                }
+            }
+        }
+        & .second-sp {
+            padding-right: 1rem;
+        }
+    }
+     
+
+    #forth-page {
+        margin: 3rem 0 3rem;
+        & .first-fp {
+            padding: 0 1rem 0 1rem ;
+            & img {
+                padding: 0 4px 0 4px ;
+            }
+        }
+        & .second-fp {
+            & .contents {
+                padding: 0 1rem 0 0 ;
+                & h1 {
+                    font-size: 5.5vw;
+                    padding-bottom: 6px;
+                }
+                & h5 {
+                    font-size: 1.8vw;
+                    padding-bottom: 6px;   
+                }
+                & button {
+                    padding: 4px;
+                    border: 2px solid black;
+                    & a {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 1.8vw;
+                    }
+                } 
+            }
+        }
+    }
+
+    /* this is the contacts */
+    .contact-us-form {
+        & #box-form {
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 7vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        padding: 0 10px;
+                        font-size: 4vw;
+                    }
+                    & .input-box {
+                        padding: 1vw;
+                        border-radius: 6px;
+                        font-size: 4vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 2rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 376px) {
+
+
+    .first-sp {
+        padding-left: 1rem;
+        & h1 {
+            font-size: 15px;
+        }
+        & h5 {
+            font-size: 6px;
+            padding-bottom: 5px;
+        }
+        & #readmore-sp {
+            padding: 2px;
+            & a {
+                font-size: 6px;
+            }
+        }
+        & #readmore-sp:hover {
+            background-color: white;    
+        }
+    }
+
+    #forth-page {
+        margin: 3rem 0 3rem;
+        & .first-fp {
+            padding: 0 1rem 0 1rem ;
+            & img {
+                padding: 0 4px 0 4px ;
+            }
+        }
+        & .second-fp {
+            & .contents {
+                padding: 0 1rem 0 0 ;
+                & h1 {
+                    font-size: 5.5vw;
+                    padding-bottom: 6px;
+                }
+                & h5 {
+                    font-size: 1.8vw;
+                    padding-bottom: 6px;   
+                }
+                & button {
+                    padding: 2px;
+                    border: 1px solid black;
+                    & a {
+                        font-size: 1.8vw;
+                    }
+                } 
+            }
+        }
+    }
+}

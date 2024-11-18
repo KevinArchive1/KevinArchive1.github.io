@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespren Johny's</title>
+    <link rel="stylesheet" href="Contact_css.css">
+    <link rel="icon" type="image/jpg" href="homepage_img/grapicon.jpg">
+</head>
+<body>
+    <!-- header -->
+    <header class="MainHeader">
+        <div class="logo">
+            <img src="homepage_img/Logo-removebg-preview.png" alt="Logo" loading="lazy">
+        </div>   
+        <nav>
+            <ul class="menu-items">
+                <li><a href="login.html" id="log-out">Log Out</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li id="account-icon">
+                    <a href="login.html">
+                        <img src="homepage_img/iconamoon_profile-fill.png" alt="Profile Icon" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">
+            <img src="homepage_img/close.png" alt="">
+        </a>
+        <div class="overlay-content">
+            <a href="login.html" id="log-out">Log Out</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!--  The content of the page  -->
+    <main class="content">
+
+        <div class="box">
+            <div class="middlebox">
+                <div class="subjects" id="fifth-page">
+                    <div class="contact-us-label">  
+                        <img src="homepage_img/Contact.png" alt="" loading="lazy">
+                    </div>
+                    <div class="contact-us-form">
+                        <div id="box-form">
+                            <h1>
+                                Have Questions? <br>
+                                Send Us a Message!
+                            </h1>
+                            <Form>
+                                <div class="baseline">
+                                    <label for="name">Your name</label>
+                                    <input type="text" id="name" name="name" class="input-box" required>
+                                </div>
+                                <div class="baseline">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="input-box" required>    
+                                </div>
+                                <div class="baseline">
+                                    <label for="message">Massage</label>
+                                    <textarea name="message" rows="5" class="input-box"></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit" >Send</button>
+                                </div>
+                            </Form>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="homepage_img/footer-logo.png" alt="Footer Logo">
+        </div>
+        <div class="descriptions-and-icons">
+            <div class="description">
+                <p>
+                    Follow us on our social media platforms for the <br> latest updates, delicious recipes, and foodie news!
+                </p>
+            </div>
+            <div class="icons">
+                <img src="homepage_img/fb.png" alt="Facebook Icon">
+                <img src="homepage_img/mesenger.png" alt="Messenger Icon">
+                <img src="homepage_img/insta.png" alt="Instagram Icon">
+            </div>
+        </div>
+        <div class="other-info">
+            <div class="des" id="destination">
+                <img src="homepage_img/location.png" alt="Location Icon">
+                <p>
+                    Lucena, Philippines, 4301 <br>
+                    Address
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/cpnum.png" alt="Phone Icon">
+                <p>
+                    0915 683 5232 <br>
+                    Mobile
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/email.png" alt="Email Icon">
+                <p>
+                    marquezannaguia@yahoo.com <br>
+                    Email
+                </p>
+            </div>
+        </div>          
+    </footer>
+<script src="script.js">
+</script>
+
+</body>
+</html>

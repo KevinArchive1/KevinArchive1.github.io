@@ -1,0 +1,247 @@
+@import url(header-footer.css);
+
+
+#fifth-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(homepage_img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.contact-us-label {
+    justify-content: flex-start;
+    width: 100%;
+    height: 40%;
+    & img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.contact-us-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    & #box-form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 2px solid;
+        border-radius: 1rem;
+        height: 90%;
+        width: 90%;
+        margin: 1rem;
+        & h1 {
+            text-align: center;
+            padding: 1rem;
+            font-size: 2vw;
+        }
+        & Form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            
+            & .baseline {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 1rem;
+                width: 100%;
+                align-items: center;
+                & label {
+                    padding:  0.5rem 1rem;
+                    align-self: flex-start;
+                    font-size: 1.2vw;
+                    font-weight: 700;
+                }
+                & .input-box {
+                    display: flex;
+                    width: 90%;
+                    padding: 0.8vw;
+                    border-radius: 10px;
+                    box-shadow: 10px black inset;
+                    font-size: 1.2vw;
+                }
+                & textarea.input-box {
+                    resize: none;
+                    height: 100px;
+                }
+            }
+            & button {
+                margin-bottom: 4rem;
+                padding: 10px 3rem 10px 3rem ;
+                font-size: 1.2vw;
+                font-weight: 700;
+                background-color: #FCE078;
+                border: none;
+                border-radius: 10px;
+                transition: 0.2s;
+            }
+            & button:hover {
+                background-color: white;
+                border: 1px solid black ;
+            }
+        }
+    }
+}
+
+/* Footer */
+
+
+
+@media (max-width: 1024px) {
+
+    .contact-us-form {
+        & #box-form {
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 3vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        font-size: 1.5vw;
+                    }
+                    & .input-box {
+                        padding: 0.8vw;
+                        border-radius: 6px;
+                        font-size: 1.5vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 3rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    
+    .contact-us-form {
+        & #box-form {
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 3vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        padding: 0.3rem 0.3rem;
+                        font-size: 2vw;
+                    }
+                    & .input-box {
+                        padding: 0.8vw;
+                        border-radius: 6px;
+                        font-size: 2vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 3rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+/* small phones */
+@media (max-width: 640px) {
+
+    #fifth-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us-label {
+        display: flex;
+        justify-content: center;
+        & img {
+            height: 50%;
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+
+    .contact-us-form {
+        & #box-form {
+            background-image: url(homepage_img/image.png);
+            background-position: bottom left;
+            background-size: auto;
+            background-repeat: no-repeat;
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 5vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        padding: 1rem 1rem;
+                        font-size: 3vw;
+                    }
+                    & .input-box {
+                        padding: 1vw;
+                        border-radius: 6px;
+                        font-size: 3vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 3rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+}
+/* smallest phones */
+
+@media (max-width: 476px) {
+
+    .contact-us-form {
+        & #box-form {
+            margin: 1rem;
+            & h1 {
+                padding: 1rem;
+                font-size: 7vw;
+            }
+            & Form {
+                & .baseline {
+                    & label {
+                        padding: 0 10px;
+                        font-size: 4vw;
+                    }
+                    & .input-box {
+                        padding: 1vw;
+                        border-radius: 6px;
+                        font-size: 4vw;
+                    }
+                }
+                & button {
+                    margin-bottom: 2rem;
+                    padding: 8px 3rem 8px 3rem ;
+                    font-size: 4vw;
+                }
+            }
+        }
+    }
+
+}
+
+

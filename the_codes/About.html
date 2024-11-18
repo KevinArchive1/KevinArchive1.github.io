@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespren Johny's</title>
+    <link rel="stylesheet" href="About_css.css">
+    <link rel="icon" type="image/jpg" href="homepage_img/grapicon.jpg">
+</head>
+<body>
+    <!-- header -->
+    <header class="MainHeader">
+        <div class="logo">
+            <img src="homepage_img/Logo-removebg-preview.png" alt="Logo" loading="lazy">
+        </div>   
+        <nav>
+            <ul class="menu-items">
+                <li><a href="login.html" id="log-out">Log Out</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li id="account-icon">
+                    <a href="login.html">
+                        <img src="homepage_img/iconamoon_profile-fill.png" alt="Profile Icon" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    
+    <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">
+            <img src="homepage_img/close.png" alt="">
+        </a>
+        <div class="overlay-content">
+            <a href="login.html" id="log-out">Log Out</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!--  The content of the page  -->
+    <main class="content">
+
+        <div class="box">
+            <div class="middlebox">
+                <h1>
+                    About Us
+                </h1>
+                <div id="first-box">
+                    <picture id="first-box-img">
+                        <source media="(min-width: 641px)" srcset="About_img/image 15.png">
+                        <source media="(max-width: 640px)" srcset="About_img/Image.png">
+                        <img src="About_img/image 15.png" alt="">
+                    </picture>
+                    <div id="first-box-text">
+                        <h1>
+                            Johny's <br>
+                            Fried Chicken
+                        </h1>
+                        <h5>
+                            A fried chicken haven nestled in the heart of Lucena City. We've been serving up mouthwatering, crispy fried chicken for number of years, using traditional recipes and the finest ingredients. Our commitment to quality and flavor is evident in every bite. Come experience the taste of the Bigger, Crispier, and Juicier right here in Lucena City.
+                        </h5>
+                    </div>
+                </div>
+                <div id="blank-space"></div>
+                <div id="second-box">
+                    <div id="second-box-text">
+                        <div>
+                            <h1>
+                                History
+                            </h1>
+                            <h5>
+                                Our journey began with a diverse range of offerings, including burgers, milk tea, and coffee. It wasn't long before we decided to explore a new culinary adventure: fried chicken. Starting small, we poured our passion into perfecting our recipe, and as our popularity grew, so did our menu. We introduced a variety of exciting flavors to delight our customers, and we also expanded our coffee selection, creating a warm and inviting atmosphere for everyone to enjoy.
+                            </h5>
+                        </div>
+                    </div>
+                    <div id="second-box-img">
+                        <img src="About_img/Group 54.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="homepage_img/footer-logo.png" alt="Footer Logo">
+        </div>
+        <div class="descriptions-and-icons">
+            <div class="description">
+                <p>
+                    Follow us on our social media platforms for the <br> latest updates, delicious recipes, and foodie news!
+                </p>
+            </div>
+            <div class="icons">
+                <img src="homepage_img/fb.png" alt="Facebook Icon">
+                <img src="homepage_img/mesenger.png" alt="Messenger Icon">
+                <img src="homepage_img/insta.png" alt="Instagram Icon">
+            </div>
+        </div>
+        <div class="other-info">
+            <div class="des" id="destination">
+                <img src="homepage_img/location.png" alt="Location Icon">
+                <p>
+                    Lucena, Philippines, 4301 <br>
+                    Address
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/cpnum.png" alt="Phone Icon">
+                <p>
+                    0915 683 5232 <br>
+                    Mobile
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/email.png" alt="Email Icon">
+                <p>
+                    marquezannaguia@yahoo.com <br>
+                    Email
+                </p>
+            </div>
+        </div>          
+    </footer>
+<script src="script.js">
+</script>
+
+</body>
+</html>

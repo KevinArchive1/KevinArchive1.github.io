@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespren Johny's</title>
+    <link rel="stylesheet" href="Blog_css.css">
+    <link rel="icon" type="image/jpg" href="homepage_img/grapicon.jpg">
+</head>
+<body>
+    <!-- header -->
+    <header class="MainHeader">
+        <div class="logo">
+            <img src="homepage_img/Logo-removebg-preview.png" alt="Logo" loading="lazy">
+        </div>   
+        <nav>
+            <ul class="menu-items">
+                <li><a href="login.html" id="log-out">Log Out</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li id="account-icon">
+                    <a href="login.html">
+                        <img src="homepage_img/iconamoon_profile-fill.png" alt="Profile Icon" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    
+    <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">
+            <img src="homepage_img/close.png" alt="">
+        </a>
+        <div class="overlay-content">
+            <a href="login.html" id="log-out">Log Out</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!--  The content of the page  -->
+    <main class="content">
+        <div class="box">
+            <div class="middlebox">
+                <div class="search-container">
+                    <div class="search-and-title">
+                        <h1>
+                            Our Blogs
+                        </h1>
+                        <input type="text" id="search-input" placeholder="Search" onkeyup="search_post()">
+                    </div>
+                </div>
+                <div class="blog-container">
+                    <div class="blog-post">
+                        <div class="post-img">
+                            <img src="Blog_img/image.png" alt="">
+                        </div>
+                        <div id="post-content">
+                            <h1>A Better Version of Burger</h1>
+                            <p>In a world of hunger you deserve something better imagine a burger with a perfectly seared, juicy beef patty, topped with melted cheddar cheese that oozes over the edges. Crisp lettuce and fresh tomato slices add a refreshing crunch, while a tangy pickle slice gives a little zing. Smoky bacon strips and caramelized onions add depth, balancing savory and sweet. A slather of creamy mayo and a hint of spicy mustard make each bite irresistibly satisfying. All of this is nestled in a toasted brioche bun, soft yet sturdy enough to hold all the flavors together. Each mouthful is a perfect balance of textures and tastes—pure burger bliss!
+                            <span id="dots1" class="dots" >.....</span>
+                            <span id="more-text1" class="hide">
+                                <br><br>Now, imagine sinking your teeth into this masterpiece, where every layer bursts with flavor, and each ingredient complements the others to create a symphony of taste. The savory beef, smoky bacon, and tangy condiments are perfectly balanced by the freshness of the vegetables and the richness of the cheese. The brioche bun, golden and lightly toasted, adds a subtle sweetness that ties everything together. It’s not just a meal; it’s an experience—a moment of pure indulgence in every bite, designed to satisfy your deepest cravings and elevate your burger game to new heights.
+                            </span>
+                            <span id="read-more1" class="read-more" onclick="display_hidden_text('1')">Read More</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-post reverse">
+                        <div id="post-content">
+                            <h1>The Missing Piece of Your  Day</h1>
+                            <p>Indulge in the perfect blend of rich tea and creamy milk, crafted to satisfy your cravings in every sip. Our signature milk tea combines premium tea leaves with a smooth, velvety texture, balanced sweetness, and a hint of caramel flavor. With every refreshing cup, experience the satisfying chew of our freshly made tapioca pearls, adding the perfect touch to this delicious treat. Whether you’re looking for a midday pick-me-up or a sweet escape, our creamy milk tea is here to elevate your day!.>>
+                            <span id="dots2" class="dots" >.....</span>
+                            <span id="more-text2" class="hide">
+                                <br><br>Each sip of our signature milk tea transports you to a place of comfort and relaxation, with its perfect harmony of bold tea and silky milk. The richness of the tea blends seamlessly with the sweetness, creating a delightful contrast that excites the senses. The chewy tapioca pearls, soft yet pleasantly firm, provide an extra layer of satisfaction with every mouthful, making each cup a complete, indulgent experience. Whether enjoyed on a leisurely afternoon or shared with friends, our milk tea is more than just a drink—it's a moment of joy that adds a little sweetness to your day.
+                            </span>
+                            <span id="read-more2" class="read-more" onclick="display_hidden_text('2')">Read More</span>
+                            </p>
+                        </div>
+                        <div class="post-img">
+                            <img src="Blog_img/image (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="blog-post">
+                        <div class="post-img">
+                            <img src="Blog_img/Garlic chicken.png" alt="">
+                        </div>
+                        <div id="post-content">
+                            <h1> Rich & Creamy Texture </h1>
+                            <p>The perfect balance of smoothness and flavor.  Bold Garlic Flavor – Just the right amount of zest to make your taste buds dance.  Versatile – Use it as a dip, spread, sauce, or marinade!  Fresh & All-Natural – Only the best ingredients for the best taste
+                            <span id="dots3" class="dots" >.....</span>
+                            <span id="more-text3" class="hide">
+                                <br><br>The crispy, fried chicken is elevated by a rich, creamy sauce that perfectly complements the bold garlic flavor. Ideal for dipping or drizzling over the chicken, this sauce adds depth to every bite. Whether you prefer a milder or spicier taste, this dish delivers on all levels.
+                            </span>
+                            <span id="read-more3" class="read-more" onclick="display_hidden_text('3')">Read More</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-post hidden reverse">
+                        <div id="post-content">
+                            <h1>A Perfect Bubble Tea</h1>
+                            <p>It combines sweet milk tea with chewy tapioca pearls, offering a unique contrast of textures. The drink can be customized with different tea bases (black, green, or oolong) and various flavors like fruit or caramel. The signature tapioca pearls, made from cassava starch, are what make this drink a worldwide favorite. Whether served hot or cold, bubble tea is a treat for both tea lovers and those seeking a fun, refreshing drink
+                            <span id="dots4" class="dots" >.....</span>
+                            <span id="more-text4" class="hide">
+                                <br><br>The chewy tapioca pearls provide a delightful contrast to the silky smooth tea, making every sip a textural adventure. Whether you like it classic with black tea or adventurous with fruity flavors, this bubble tea has something for everyone. It’s the perfect drink to cool down on a hot day or enjoy as a sweet afternoon treat.                            </span>
+                            <span id="read-more4" class="read-more" onclick="display_hidden_text('4')">Read More</span>
+                            </p>
+                        </div>
+                        <div class="post-img">
+                            <img src="Blog_img/image (2).png" alt="">
+                        </div>
+                    </div>
+                    <div class="blog-post hidden">
+                        <div class="post-img">
+                            <img src="Blog_img/image (3).png" alt="">
+                        </div>
+                        <div id="post-content">
+                            <h1>Crispy Perfection</h1>
+                            <p>Fried chicken, with its irresistible golden crust and tender, juicy inside, is a beloved comfort food across the globe. This explores the secrets on achieving perfectly crispy and flavorful fried chicken every time, from choosing the right cut of chicken to preparing the ideal batter and frying techniques. Whether you're a beginner or a seasoned home cook, this guide will help you create a mouthwatering dish that’s sure to be a hit with family and friends.                       
+                            <span id="dots5" class="dots" >.....</span>
+                            <span id="more-text5" class="hide">
+                                <br><br>Achieving that perfect crunch with tender, juicy meat inside takes the right frying technique and seasoning. This fried chicken is seasoned with a special blend of herbs and spices that keep you coming back for more. Whether for a family dinner or a casual gathering, it’s sure to satisfy even the pickiest eaters.
+                            </span>
+                            <span id="read-more5" class="read-more" onclick="display_hidden_text('5')">Read More</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-post hidden reverse">
+                        <div id="post-content">
+                            <h1>Definition of Quality Meal</h1>
+                            <p>Chicken is one of the most versatile proteins, and with the right blend of marinades and seasonings, you can transform it into a flavorful masterpiece. This delves into the art of creating flavored chicken, from spicy and tangy marinades to savory herb-infused rubs. Whether you’re grilling, roasting, or frying, discover how to infuse your chicken with delicious flavors that take your meals to the next level. Perfect for weeknight dinners or special occasions, these recipes are sure to impress!
+                            <span id="dots6" class="dots" >.....</span>
+                            <span id="more-text6" class="hide">
+                                <br><br>The beauty of chicken lies in its ability to absorb and complement a wide range of flavors, making it an ideal canvas for creativity in the kitchen. Whether you're marinating it overnight in a zesty citrus and garlic blend or rubbing it with a smoky paprika and thyme mixture, the possibilities are endless. For a deeper, richer taste, consider slow-cooking or braising your chicken to allow the seasonings to infuse the meat, creating layers of flavor with every bite. Adding elements like a touch of honey for sweetness, or a splash of soy sauce for umami, can elevate your chicken dishes even further. With these simple techniques, you'll be able to serve up chicken that’s bursting with vibrant, mouthwatering flavors, guaranteed to please any palate.
+                            </span>
+                            <span id="read-more6" class="read-more" onclick="display_hidden_text('6')">Read More</span>
+                            </p>
+                        </div>
+                        <div class="post-img">
+                            <img src="Blog_img/image (4).png" alt="">
+                        </div>
+                    </div>
+                    <div class="no-result">
+                        <div id="post-content">
+                            <h1> No result</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-container">
+                    <button id="load-more" onclick="loadMore()">Load More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="homepage_img/footer-logo.png" alt="Footer Logo">
+        </div>
+        <div class="descriptions-and-icons">
+            <div class="description">
+                <p>
+                    Follow us on our social media platforms for the <br> latest updates, delicious recipes, and foodie news!
+                </p>
+            </div>
+            <div class="icons">
+                <img src="homepage_img/fb.png" alt="Facebook Icon">
+                <img src="homepage_img/mesenger.png" alt="Messenger Icon">
+                <img src="homepage_img/insta.png" alt="Instagram Icon">
+            </div>
+        </div>
+        <div class="other-info">
+            <div class="des" id="destination">
+                <img src="homepage_img/location.png" alt="Location Icon">
+                <p>
+                    Lucena, Philippines, 4301 <br>
+                    Address
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/cpnum.png" alt="Phone Icon">
+                <p>
+                    0915 683 5232 <br>
+                    Mobile
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/email.png" alt="Email Icon">
+                <p>
+                    marquezannaguia@yahoo.com <br>
+                    Email
+                </p>
+            </div>
+        </div>          
+    </footer>
+<script src="script.js">
+</script>
+
+</body>
+</html>

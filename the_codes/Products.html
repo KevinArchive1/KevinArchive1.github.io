@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespren Johny's</title>
+    <link rel="stylesheet" href="product_page.css">
+    <link rel="icon" type="image/jpg" href="homepage_img/grapicon.jpg">
+</head>
+<body>
+    <!-- header -->
+    <header class="MainHeader">
+        <div class="logo">
+            <img src="homepage_img/Logo-removebg-preview.png" alt="Logo" loading="lazy">
+        </div>   
+        <nav>
+            <ul class="menu-items">
+                <li><a href="login.html" id="log-out">Log Out</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li id="account-icon">
+                    <a href="login.html">
+                        <img src="homepage_img/iconamoon_profile-fill.png" alt="Profile Icon" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    
+    <div id="myNav" class="overlay">
+        <a class="closebtn" onclick="closeNav()">
+            <img src="homepage_img/close.png" alt="">
+        </a>
+        <div class="overlay-content">
+            <a href="login.html" id="log-out">Log Out</a>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Products.html">Products</a>
+            <a href="Blogs.html">Blogs</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!--  The content of the page  -->
+    <main class="content">
+
+        <div class="box">
+            <div class="middlebox">
+                <div class="whole">
+                    <div class="menu">
+                        <h1>FRIED CHICKEN</h1>
+                        <picture id="auto-change-pic">
+                            <source media="(min-width: 769px)" srcset="product_page/chicken.png">
+                            <source media="(max-width: 768px)" srcset="product_page/chicken2.png">
+                            <img id="chicken" src="product_page/chicken.png" alt="">
+                        </picture>
+                    </div>
+                    <div id="sauces">
+                        <div class="dip-sauce">
+                            <img class="dip" src="./product_page/Buffalo.png" alt="">
+                            <div class="items">
+                                <div class="sauce_desc">
+                                    <h1 class="sauce_name">Buffalo</h1>
+                                    <p>₱65.00</p>
+                                </div>
+                                <div class="plus-sign">
+                                    <img src="./product_page/Vector.png"  alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dip-sauce">
+                            <img class="dip" src="./product_page/Garlic chicken.png" alt="">
+                            <div class="items">
+                                <div class="sauce_desc">
+                                    <h1 class="sauce_name">Garlic Meyo</h1>
+                                    <p>₱65.00</p>
+                                </div>
+                                <div class="plus-sign">
+                                    <img src="./product_page/Vector.png"  alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dip-sauce">
+                            <img class="dip" src="./product_page/Cheese Chicken.png" alt="">
+                            <div class="items">
+                                <div class="sauce_desc">
+                                    <h1 class="sauce_name">Cheese</h1>
+                                    <p>₱65.00</p>
+                                </div>
+                                <div class="plus-sign">
+                                    <img src="./product_page/Vector.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dip-sauce">
+                            <img class="dip" src="./product_page/Korean Chicken.png" alt="">
+                            <div class="items">
+                                <div class="sauce_desc">
+                                    <h1 class="sauce_name">Korean Soygarlic</h1>
+                                    <p>₱65.00</p>
+                                </div>
+                                <div class="plus-sign">
+                                    <img src="./product_page/Vector.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="others">
+                        <h1 id="other-prod">OTHER PRODUCTS:</h1>
+                        <div class="drinks">
+                            <div id="coffee-img">
+                                <img src="./product_page/coffee.png"  alt="">
+                            </div>
+                            <div id="coffee_menu">
+                                <div class="coffee_item">
+                                    <div class="coffee_bg">
+                                        <img class="coffee" src="./product_page/mocha.png"  alt="">
+                                    </div>
+                                    <div class="items">
+                                        <div class="coffee_desc">
+                                            <h1 class="coffee_name">Mocha</h1>
+                                            <p>₱35.00</p>
+                                        </div>
+                                        <div class="plus-sign">
+                                            <img src="./product_page/Vector.png"  alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coffee_item">
+                                    <div class="coffee_bg">
+                                        <img class="coffee" src="./product_page/iced_latte.png"  alt="">
+                                    </div>
+                                    <div class="items">
+                                        <div class="coffee_desc">
+                                            <h1 class="coffee_name">Iced Latte</h1>
+                                            <p>₱35.00</p>
+                                        </div>
+                                        <div class="plus-sign">
+                                            <img src="./product_page/Vector.png"  alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coffee_item">
+                                    <div class="coffee_bg">
+                                        <img class="coffee" src="./product_page/salted-caramel.png"  alt="">
+                                    </div>
+                                    <div class="items">
+                                        <div class="coffee_desc">
+                                            <h1 class="coffee_name">Salted Caramel</h1>
+                                            <p>₱35.00</p>
+                                        </div>
+                                        <div class="plus-sign">
+                                            <img src="./product_page/Vector.png"  alt="">
+                                        </div>
+                                    </div>
+                                </div>     
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="homepage_img/footer-logo.png" alt="Footer Logo">
+        </div>
+        <div class="descriptions-and-icons">
+            <div class="description">
+                <p>
+                    Follow us on our social media platforms for the <br> latest updates, delicious recipes, and foodie news!
+                </p>
+            </div>
+            <div class="icons">
+                <img src="homepage_img/fb.png" alt="Facebook Icon">
+                <img src="homepage_img/mesenger.png" alt="Messenger Icon">
+                <img src="homepage_img/insta.png" alt="Instagram Icon">
+            </div>
+        </div>
+        <div class="other-info">
+            <div class="des" id="destination">
+                <img src="homepage_img/location.png" alt="Location Icon">
+                <p>
+                    Lucena, Philippines, 4301 <br>
+                    Address
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/cpnum.png" alt="Phone Icon">
+                <p>
+                    0915 683 5232 <br>
+                    Mobile
+                </p>
+            </div>
+            <div class="des">
+                <img src="homepage_img/email.png" alt="Email Icon">
+                <p>
+                    marquezannaguia@yahoo.com <br>
+                    Email
+                </p>
+            </div>
+        </div>          
+    </footer>
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
