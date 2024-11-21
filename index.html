@@ -82,8 +82,16 @@
                     </div>
                     <div class="second-tp">
                         <div class="image-container">
-                            <img src="the_codes/homepage_img/Products.png" alt="" loading="lazy">
-                            <img src="the_codes/homepage_img/Products 2.png" alt="" loading="lazy">
+                            <picture>
+                                <source media="(min-width: 477px)" srcset="the_codes/homepage_img/Products.png">
+                                <source media="(max-width: 476px)" srcset="the_codes/homepage_img/Chicken.png">
+                                <img src="the_codes/homepage_img/Products.png" alt="" loading="lazy">
+                            </picture>
+                            <picture>
+                                <source media="(min-width: 477px)" srcset="the_codes/homepage_img/Products_1.png">
+                                <source media="(max-width: 476px)" srcset="the_codes/homepage_img/Options.png">
+                                <img src="the_codes/homepage_img/Products_1.png" alt="" loading="lazy">
+                            </picture>
                         </div>
                     </div>
                     <div id="seemore-tp">

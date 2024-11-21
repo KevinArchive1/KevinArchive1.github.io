@@ -247,6 +247,13 @@ footer > .footer-logo > img {
 
 .icons > img {
     padding: 0 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.icons > img:hover {
+    box-shadow: 0 0 10px black; 
+    transform: scale(1.05);
+    border-radius: 12px;
 }
 
 footer > .other-info > .des {

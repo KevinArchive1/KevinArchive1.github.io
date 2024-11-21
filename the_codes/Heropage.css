@@ -618,58 +618,132 @@
 
  /* THIS IS THE SECOND PAGE */
     #second-page {
+        flex-direction: column-reverse;
         margin: 4rem 0 4rem 0;
+        background-position: bottom;
         & .first-sp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             padding-left: 1rem;
+            width: 90%;
             & h1 {
-                font-size: 5vw;
+                
+                align-self: center;
+                font-size: 10vw;
                 padding-bottom: 8px;
+                align-self: center;
             }
             & h5 {
-                font-size: 2vw;
+                font-size: 4vw;
                 padding-bottom: 10px;
                 padding-bottom: 8px;
             }
             & #readmore-sp {
-                padding: 1vw;
+                padding: 2vw;
                 padding: 2px 10px 2px 10px;
+                margin-bottom: 1rem;
                 & a {
-                    font-size: 2vw;
+                    font-size: 4vw;
                 }
             }
         }
         & .second-sp {
+            width: 60%;
             padding-right: 1rem;
         }
     }
      
 
+    #third-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 3rem 0 3rem ;
+        & .first-tp {
+            display: flex;
+            padding: 0 0 2rem ;
+            & img {
+                height: auto;
+                width: 20%;
+            }
+            & h1 {
+                font-size: 8vw;
+            }
+        }
+        & .second-tp {
+            width: 100%;
+            display: flex;
+            padding: 0;
+            & .image-container {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                & picture {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & img {
+                        width: 90%;
+                        height: auto;
+                    }
+                }
+            }
+        }       
+        & #seemore-tp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            & button {
+                display: flex;
+                & a {
+                    font-size: 4vw;
+                    color: white;
+                    
+                }
+            }
+        }
+    }
+
     #forth-page {
+        flex-direction: column;
+        align-items: center;
         margin: 3rem 0 3rem;
+        background-position: bottom;
         & .first-fp {
             padding: 0 1rem 0 1rem ;
             & img {
+                width: 70%;
                 padding: 0 4px 0 4px ;
             }
         }
         & .second-fp {
+            width: 90%;
             & .contents {
                 padding: 0 1rem 0 0 ;
+                display: flex;
+            align-items: center;
+            justify-content: center;
                 & h1 {
-                    font-size: 5.5vw;
+                    font-size: 10vw;
                     padding-bottom: 6px;
                 }
                 & h5 {
-                    font-size: 1.8vw;
-                    padding-bottom: 6px;   
+                    font-size: 4vw;
+                    padding-bottom: 1rem;  
+
                 }
                 & button {
+                    align-self: flex-start;
                     padding: 4px;
                     border: 2px solid black;
                     & a {
                         display: flex;
                         justify-content: center;
-                        font-size: 1.8vw;
+                        font-size: 4vw;
                     }
                 } 
             }
@@ -727,36 +801,6 @@
         }
         & #readmore-sp:hover {
             background-color: white;    
-        }
-    }
-
-    #forth-page {
-        margin: 3rem 0 3rem;
-        & .first-fp {
-            padding: 0 1rem 0 1rem ;
-            & img {
-                padding: 0 4px 0 4px ;
-            }
-        }
-        & .second-fp {
-            & .contents {
-                padding: 0 1rem 0 0 ;
-                & h1 {
-                    font-size: 5.5vw;
-                    padding-bottom: 6px;
-                }
-                & h5 {
-                    font-size: 1.8vw;
-                    padding-bottom: 6px;   
-                }
-                & button {
-                    padding: 2px;
-                    border: 1px solid black;
-                    & a {
-                        font-size: 1.8vw;
-                    }
-                } 
-            }
         }
     }
 }

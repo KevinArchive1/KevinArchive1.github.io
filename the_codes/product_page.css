@@ -92,7 +92,7 @@
         flex-direction: column;
     
         & .sauce_name {
-            font-size: 2vw;
+            font-size: 2rem;
             font-weight: 700;
         }
         & p{
