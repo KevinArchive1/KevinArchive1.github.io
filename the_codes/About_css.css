@@ -46,10 +46,6 @@
 }
 
 
-#blank-space {
-    display: none;
-}
-
 #second-box {
     display: flex;
     justify-content: center;
@@ -58,9 +54,9 @@
     background-image: url(homepage_img/second-bg-img.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 80%;
+    background-size: 100% 70%;
     & #second-box-text {
-        width: 50%;
+        width: 60%;
         & h1 {
             padding: 1px;
             font-size: 5vw;
@@ -72,7 +68,7 @@
         }
     }
     & #second-box-img {
-        width: 50%;
+        width: 40%;
         & img {
             height: auto;
             width: 100%;
@@ -195,6 +191,7 @@
         flex-direction: column;
         background-position: bottom;
         padding: 2rem;
+        margin-bottom: 2rem;
         & #first-box-img {
             width: 60%;
         }
@@ -209,11 +206,6 @@
             }
         }
     
-    }
-    
-    #blank-space {
-        display: flex;
-        padding: 2rem;
     }
 
     #second-box {

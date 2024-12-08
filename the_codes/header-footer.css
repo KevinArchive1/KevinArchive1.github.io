@@ -220,19 +220,40 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;  
-    background-color: #FCE078;
+    background-color: black;
+    border-top: 5px #FCE078 solid;
+    & .footer-logo {
+        height: 100%;
+        width: auto;
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: auto;
+            & img {
+                height: 80%;
+                width: auto;
+                transition: 0.4s ease-in-out;
+            }
+        }
+        & a:hover {     
+            & img {
+                transform: scale(1.03);
+                box-shadow: 0 0 10px white; 
+                border-radius: 12px;
+            }
+        }
+    }
 }
 
-footer > .footer-logo > img {
-    display: flex;
-    height: 230px;
-    width: auto;
-}
+
 
 .descriptions-and-icons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 40%;
 }
 
 .description, .icons {
@@ -243,15 +264,17 @@ footer > .footer-logo > img {
 .description > p {
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
 .icons > img {
     padding: 0 10px;
     transition: 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 .icons > img:hover {
-    box-shadow: 0 0 10px black; 
+    box-shadow: 0 0 10px white; 
     transform: scale(1.05);
     border-radius: 12px;
 }
@@ -265,7 +288,8 @@ footer > .other-info > .des {
 
 footer > .other-info > .des:hover{
     padding: 20px;
-    box-shadow: 0 0 10px black; 
+    box-shadow: 0 0 10px white; 
+    cursor: pointer;
 }
 
 footer > .other-info > .des > img {
@@ -275,11 +299,9 @@ footer > .other-info > .des > img {
 footer > .other-info > .des > p {
     font-size: 16px;
     font-weight: bold;
+    color: white;
 }
 
-#destination:hover {
-    cursor: pointer;
-}
 
 /* Laptop */
 @media (max-width: 1024px) {
@@ -351,9 +373,9 @@ footer > .other-info > .des > p {
     }
 
     .MainHeader .hamburger-menu {
-        display: flex; /* Show hamburger menu */
-        flex-direction: column; /* Stack bars vertically */
-        cursor: pointer; /* Change cursor on hover */
+        display: flex; 
+        flex-direction: column; 
+        cursor: pointer;
     }
 
     .content {
@@ -389,6 +411,10 @@ footer > .other-info > .des > p {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .descriptions-and-icons {
+        width: 60%;
     }
 
     .description, .icons {

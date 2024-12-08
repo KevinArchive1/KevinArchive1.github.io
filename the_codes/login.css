@@ -109,12 +109,19 @@ body {
                     border: 3px white solid;
                     border-radius: 8px;
                     padding: 8px;
-                    color: white;
                     font-weight: 700;
+                    cursor: pointer;
+                    transition: 0.4s ease-in-out;
                     & a {
                         text-decoration: none;
-                        color: white;
+                        color: black;
                     }
+                }
+
+                & #submit:hover {
+                    border: 2px black solid;
+                    background-color: white;
+                    transform: scale(1.01);
                 }
                 & .others {
                     display: flex;
@@ -132,6 +139,9 @@ body {
                             justify-content: center;
                             align-items: center;
                         }
+                    }
+                    & button:hover {
+                        text-decoration: underline;
                     }
                 }
             }
